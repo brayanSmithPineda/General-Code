@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+        //Object let's group multiple values together, and object contain the key(property) and the values.
+
+        const product = {
+            name: 'Sock',
+            price: 1090
+        }
+
+        console.log(product);
+        console.log(product.name);
+
+        // Modifyng a property
+        product.name = 'Cotton socks';
+        console.log(product.name);
+
+        // Ading a property
+        product.newProperty = true;
+        console.log(product);
+
+        // Deleting a property
+        delete product.newProperty;
+        console.log(product);
+
+        // type of a object
+        console.log(typeof product);
+
+        // we can use functions inside objects, they are called methods
+
+        product2 = {
+            name : 't-shirt',
+            rating: {
+                starts: 5,
+                comments: 87
+            },
+            method: function fucntion1 (){
+                console.log('a function inside an object');
+            }
+        }
+
+        product2.method();
+
+        // JSON Object is similar to JavaScript Objects but it does not support functions and single quotes, you have to use double coutes for the properties mandatory. we use JSON because a lot of programming lengaagues can understand it so we use it to send data, JavaScript Object on the other hand just make sense it javaScript.
+
+        const jsonObject = {
+            "name": "t-shirt",
+            "price": 1090
+        }
+
+        //Bult-in JSON Object, this objects helps us convert a javascript object to a JSON object and viceversa.(JSON.stringyfy and JSON.parse), the output is a string
+        
+        const  jsonString = JSON.stringify(product2); //Javascript Object to JSON
+        console.log(jsonString);
+
+        console.log(JSON.parse(jsonString)); //JSON to Javascript    
+        
+        //LocalStorage is another bult-in object that help us save data more permanentely, the vlues does not dissapear when we refrest the page, LocalStorage only supports strings, as it only support string if often use with JSON.
+
+        localStorage.setItem('giving_name','value_data'); //This save the data into local storage with a giving name
+
+        console.log(localStorage.getItem('giving_name')); //we get the value we just save in local Storage
+        </script>
+</body>
+</html>

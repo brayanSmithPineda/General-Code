@@ -1,0 +1,1 @@
+ReactDOM.render(<h1>Hello, Brayan!</h1>, document.querySelector('.js-root'));

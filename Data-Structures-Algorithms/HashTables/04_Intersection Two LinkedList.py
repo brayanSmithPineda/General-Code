@@ -1,0 +1,1 @@
+#Traver linked List 1, and save the data in a hash table

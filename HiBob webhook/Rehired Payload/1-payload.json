@@ -1,0 +1,39 @@
+{
+    "companyId": 554280,
+    "employeeId": "3496900884367933526",
+    "effectiveDate": "2025-01-02",
+    "changedBy": {
+      "id": "2824294195382977501",
+      "companyId": 554280,
+      "firstName": "Tatiana",
+      "surname": "Trout",
+      "email": "ttrout@comparaonline.com",
+      "displayName": "Tatiana Trout",
+      "site": "Colombia",
+      "siteId": 2153660,
+      "impersonatorInfo": null
+    },
+    "type": "table.entry.created",
+    "data": {
+      "title": "262291855",
+      "department": "Engineering",
+      "site": "Colombia",
+      "siteId": 2153660,
+      "reportsTo": {
+        "id": "2943317144655364390",
+        "firstName": "Brayan",
+        "surname": "Pineda",
+        "email": "bpineda@comparaonline.com",
+        "displayName": "Brayan Pineda"
+      },
+      "activeEffectiveDate": "2024-12-30",
+      "workChangeType": "Rehired",
+      "customColumns": {
+        "column_1689275302809": "257481727",
+        "column_1677687845003": [],
+        "column_1689353579741": ["257492936"],
+        "column_1669844974601": "257564361"
+      }
+    },
+    "creationDate": "2025-01-02T14:48:22.118692"
+  }

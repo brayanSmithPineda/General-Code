@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissors</title>
+</head> 
+<body>
+    <p>Rock Paper and Scissors</p>
+    
+    <button onclick="
+        playGame('Rock');
+    ">
+    Rock
+    </button>
+    
+    <button onclick="
+    playGame('Paper');
+    ">
+    Paper
+    </button>
+    
+    <button onclick="
+    playGame('Scissors');
+    ">
+    Scissors
+    </button>
+
+    <script>
+        function generateComputerMove(){
+            const randNum = Math.random();
+            if (randNum <= 0.33){
+            computerMove = 'Rock';
+            } else if (0.33 < randNum <= 0.66) {
+                computerMove = 'Paper';
+            } else {
+                computerMove = 'Scissors';
+            }
+
+            return computerMove;
+        }
+
+        function playGame(myMove){
+            const computerMove = generateComputerMove();
+            if (myMove === 'Rock') {
+                if (computerMove == 'Rock'){
+                    result = 'Tie';
+                } else if (computerMove == 'Paper'){
+                    result = 'You loose';
+                } else {
+                    result = 'You win';
+                }
+            } else if (myMove === 'Paper') {
+                if (computerMove == 'Rock'){
+                    result = 'You win';
+                } else if (computerMove == 'Paper'){
+                    result = 'Tie';
+                } else {
+                    result = 'You loose';
+                }
+            } else {
+                if (computerMove == 'Rock'){
+                    result = 'You loose';
+                } else if (computerMove == 'Paper'){
+                    result = 'You win';
+                } else {
+                    result = 'Tie';
+                }
+            }
+            alert(`Computer choose ${computerMove}, you chose ${myMove}. ${result}`);
+        }
+
+    </script>
+</body>
+</html>

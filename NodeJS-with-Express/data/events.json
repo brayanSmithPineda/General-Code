@@ -1,0 +1,57 @@
+{
+    "companyId": 554280,
+    "employee": {
+      "id": "3496900884367933526",
+      "companyId": 554280,
+      "firstName": "test",
+      "surname": "Trelica",
+      "email": "ttrelica@comparaonline.com",
+      "displayName": "test Trelica",
+      "site": "Colombia",
+      "siteId": 2153660,
+      "impersonatorInfo": null
+    },
+    "changedBy": {
+      "id": "2943317144655364390",
+      "companyId": 554280,
+      "firstName": "Brayan",
+      "surname": "Pineda",
+      "email": "bpineda@comparaonline.com",
+      "displayName": "Brayan Pineda",
+      "site": "Colombia",
+      "siteId": 2153660,
+      "impersonatorInfo": null
+    },
+    "type": "employee.updated",
+    "data": {
+      "fieldUpdates": [
+        {
+          "path": "/employee/lastDayOfWork",
+          "originalValue": "2025-01-15",
+          "newValue": "2025-01-16"
+        },
+        {
+          "path": "/work/yearsOfService",
+          "originalValue": 0.151,
+          "newValue": null
+        },
+        {
+          "path": "/work/durationOfEmployment",
+          "originalValue": {
+            "periodISO": "P1M25D",
+            "sortFactor": 55,
+            "humanize": "1 month and 25 days"
+          },
+          "newValue": null
+        },
+        {
+          "path": "/internal/terminationDate",
+          "originalValue": "2025-01-15",
+          "newValue": "2025-01-16"
+        }
+      ]
+    },
+    "operationType": "Update",
+    "previous": null,
+    "creationDate": "2025-01-09T20:32:00.707955"
+}

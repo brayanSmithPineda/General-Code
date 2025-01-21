@@ -1,0 +1,78 @@
+.get-started-bottom {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.309);
+    color: rgb(246, 239, 239);
+    font-weight: bold;
+    font-size:20px;
+    border: none;
+    cursor: pointer;
+    margin-top:10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: box-shadow 0.15s;
+}
+.get-started-bottom:hover {
+    box-shadow: 0px 5px 10px rgba(36, 32, 32, 0.38);
+}
+.sign-up-bottom {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(90, 43, 135);
+    color: aliceblue;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.sign-up-bottom:hover {
+    opacity: 0.8;
+}
+.sign-up-bottom:active {
+    opacity: 0.3;
+}
+.tweet-bottom {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-radius: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(76, 127, 231);
+    color: azure;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s, background-color 1s ;
+}
+.tweet-bottom:hover {
+    background-color: azure;
+    color: rgb(76, 127, 231);
+}
+.tweet-bottom:active {
+    background-color: rgb(221, 58, 58);
+}
+.pagination {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.pagination-2 {
+    background-color: white;
+    border: none;
+    text-decoration: underline;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+    
+

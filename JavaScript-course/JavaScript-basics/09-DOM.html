@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+        //DOM (Document Object Model) is just another built-in object provided by javascript, it helps us to modify all the webpage, the document and the page are linked together so you access any element by the document object, the document sort of represent the webpage.
+
+        //This code access the title of the webpage
+        console.log(document.title);  
+        document.title = 'new title'
+
+        //document.body access all the code we have inside the body tag (HTML, CSS, JavaScript...)
+        console.log(document.body);
+
+        console.log(document.body.innerHTML); //This innerHTML acess all the HTML code within the body tag, so it gives the control of all the tags that are inside the body
+
+        document.body.innerHTML = '<button> Good Job! </button>'; // Replace all the HTML within the body with a button
+
+        document.querySelector('button'); //querySelector() is a method that lets us get any element from the page so we can use it in our javascript, we can get the the element by tag, class. In this case we select the FIRST button element we have in our page.
+
+        console.log(document.querySelector('button').innerHTML);// with innerHTML we can access the HTML text we have inside the button tag
+
+        const buttonElement = document.querySelector('.js-button'); // access the tag with a class .js-button, we save the value in a variable
+    </script>
+</body>
+</html>

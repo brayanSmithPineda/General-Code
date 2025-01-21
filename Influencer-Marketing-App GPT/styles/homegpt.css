@@ -1,0 +1,297 @@
+.header-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 450;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    padding:0px 50px;
+    background-color: white;
+}
+
+.navegation-links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.company-info {
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.company-info:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.company-info:active {
+    opacity: 0.5;
+}
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+
+}
+
+.sign-in-button, 
+.sign-up-button {
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    color: inherit; /* Ensures text color is consistent */
+}
+
+.sign-in-button:active,
+.sign-up-button:active {
+    opacity: 0.5;
+}
+
+.sign-up-button {
+    background-color: black;
+    color: white;
+    margin-right: 60px;
+}
+
+.first-grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: repeat(3, auto); 
+    grid-template-areas: 
+    'title img'
+    'subtitle img'
+    'button img';
+    /* margin: 50px 50px; */
+}
+
+.title {
+    grid-area: title;
+    font-size: 50px;
+    font-weight: bold;
+    align-self: start;
+    justify-self: start;
+    margin:0;
+    padding: 0;
+}
+
+.sub-title {
+    grid-area: subtitle;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.call-to-action-button {
+    grid-area: button;
+    background-color: rgb(17, 194, 17);
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.image-1 {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70px 60px 120px 60px 120px;
+    column-gap: 60px;
+    grid-template-areas: 
+    'img AboutUs'
+    'img WhatWeDo'
+    'img FirstParagraph'
+    'img WhyChooseNara'
+    'img SecondParagraph'
+    ;
+    /* margin: 60px 60px; */
+}
+
+.image-2 {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    justify-self: center;
+}
+
+.about-us {
+    grid-area: AboutUs;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+
+    
+}
+
+.what-we-do {
+    grid-area: WhatWeDo;
+    /* padding: 0;
+    margin: 0; */
+    /* height: 0px; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.why-choose-nara {
+    grid-area: WhyChooseNara;
+    padding: 0;
+    margin: 0;
+
+}
+.text-1 {
+    grid-area: FirstParagraph;
+}
+
+.text-2 {
+    grid-area: SecondParagraph;
+}
+
+
+.third-grid-container {
+    margin-top: 40px;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+    'content1 content2'
+    'content3 content4'
+    ;
+}
+
+.title-container {
+    margin-top: 100px;
+    grid-area: title;
+    text-align: center;
+}
+
+.content-1-container {
+    grid-area: content1;
+}
+
+.content-2-container{
+    grid-area: content2;
+}
+
+.content-3-container {
+    grid-area: content3;
+}
+
+.content-4-container {
+    grid-area: content4;
+}
+
+.subtitle-container {
+    display: flex;
+    align-items: center;
+    /* border: black;
+    border-style: solid; */
+}
+
+.subtitle-container h2 {
+    /* border: green;
+    border-style: solid; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    /* line-height: 50px; */
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.subtitle-container img {
+    width: 50px;
+    height: 50px;
+    /* border-color: red;
+    border-style: solid; */
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    border-color: green;
+    border-style: solid;
+    margin-right: 10px;
+}
+
+.fourth-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-top: 60px;
+    
+}
+
+.fourth-container img {
+    flex: 1;
+    height: 808.8px;
+}
+
+.How-it-works-flex-container {
+    align-items: start;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.How-it-works h1{
+    display: flex;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns:  repeat(3,300px);
+    /* justify-content: space-evenly; */
+    margin: 100px -80px -60px -60px;
+    /* gap: 20px; */
+    padding: 0px 0px 40px 70px;
+    background-color: rgb(36, 35, 35);
+    color: white
+}
+
+.social-media-icon-flex {
+    display: flex;
+    column-gap: 20px;
+}
+
+.social-media-icon {
+    background-color: gray;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <button class="button-listener">AddEventListener</button>
+    <script>
+        //we can create functions and save it in a variable and then call it, and this case is not necesary to give a name to our function since we are using the name of the variable
+        const greetingFunction = function() {
+            console.log('hello');
+        }
+
+        greetingFunction();
+
+        //Loop through an array with the forEach method
+
+        [
+            'element1',
+            'element2'
+        ].forEach(function(eachElement,eachIndex){
+            console.log(eachElement);
+            console.log(eachIndex);
+        })
+
+        //Arrow function, just a shorter way to write functions
+
+        const regularFunction = function(){
+            console.log('regular function');
+        };
+
+        const arrowFunction = () => {
+            console.log('arrow function');
+        };
+
+        //General we use arrow function inside objects, or when we use a function as a parameter
+        /*
+        setInterval(() => {
+            console.log('arrow function when is a parameter');
+        },5000);*/
+
+       //Another way to use onlclick is with the .AddEventListener method, this allows us to create an event and then the function we want to perform when the event is trigger
+       
+       const buttonElement = document.querySelector('.button-listener')
+
+       buttonElement.addEventListener('click',() => {
+        console.log('This is the eventListener, is like the onlclik property');
+       })
+       
+    </script>
+</body>
+</html> 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+</head>
+<body>
+    <script>
+        // Arrays: arrays is a data structure that store a list of values.
+        const myArray = [1,2,3,4];
+        console.log(myArray);
+
+        //Accesing the elements of an array with bracket notation and indexing
+        console.log(myArray[0]);
+
+        //properties and methods of arrays
+        console.log(myArray.length); // leght of the array
+        
+        myArray.push(100) // Add an element to the end
+        console.log(myArray); 
+
+        //Loops
+        //While Loops
+        let i = 0
+        while (i < 5){
+            console.log(i);
+            i++;
+        }
+
+        //Foor loops(loop variable, condition, step incrementation)
+        for (let i = 0 ; i < 5 ; i++){
+            console.log(i);
+        }
+
+        //Looping through and array
+        const todoList = ['todo 1', 'todo 2', 'todo 3']
+        for (let i = 0 ; i < todoList.length ; i++){
+            console.log(i,todoList[i]);
+        }
+
+        //Acumulating patern
+        const nums = [1,1,2];
+        let res = 0;
+        for (let i = 0 ; i < nums.length ; i++){
+            res += nums[i];
+        }
+        console.log(res);
+
+        let res2 = [];
+        for (let i = 0; i < nums.length ; i++){
+            res2.push(i*i);
+        }
+        console.log(res2);
+
+        //break: lets us end a loop early, continue enable us to skip an iteration
+        for (let i = 0 ; i <= 11 ; i++){
+            //skip the values that are divisible by 3
+            if (i % 3 === 0){
+                continue
+            }
+
+            //when the value is 10 get out of the loop
+            if (i === 10){
+                break
+            }
+
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

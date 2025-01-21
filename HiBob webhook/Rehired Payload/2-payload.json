@@ -1,0 +1,25 @@
+{
+    "companyId": 554280,
+    "employeeId": "3496900884367933526",
+    "effectiveDate": "2025-01-02",
+    "changedBy": {
+      "id": "2824294195382977501",
+      "companyId": 554280,
+      "firstName": "Tatiana",
+      "surname": "Trout",
+      "email": "ttrout@comparaonline.com",
+      "displayName": "Tatiana Trout",
+      "site": "Colombia",
+      "siteId": 2153660,
+      "impersonatorInfo": null
+    },
+    "type": "table.entry.created",
+    "data": {
+      "status": "employed",
+      "employeeStatus": "Active",
+      "reasonType": null,
+      "leaveReason": null,
+      "customColumns": {}
+    },
+    "creationDate": "2025-01-02T14:48:22.026071"
+  }

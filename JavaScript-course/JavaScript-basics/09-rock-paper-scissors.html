@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissors</title>
+</head> 
+<body>
+    <p>Rock Paper and Scissors</p>
+    
+    <button onclick="
+        playGame('Rock');
+    ">
+    Rock
+    </button>
+    
+    <button onclick="
+        playGame('Paper');
+    ">
+    Paper
+    </button>
+    
+    <button onclick="
+        playGame('Scissors');
+    ">
+    Scissors
+    </button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button onclick="
+        score.Wins = 0;
+        score.Looses = 0;
+        score.Ties = 0;
+        localStorage.removeItem('score');
+
+        //We write the updateScoreElement function to reset the score immediatily we click the button, if we do not write this line the webpage will displate the old score until we play again
+        updateScoreElement();
+    ">
+        Reset Scores
+    </button>
+
+    <script>
+        
+
+        function generateComputerMove(){
+            const randNum = Math.random();
+            if (randNum <= 0.33){
+                computerMove = 'Rock';
+            } else if (randNum > 0.33 && randNum <= 0.66) {
+                computerMove = 'Paper';
+            } else {
+                computerMove = 'Scissors';
+            }
+            return computerMove;
+        }
+
+        // const score = {
+        //     Looses : 0,
+        //     Wins : 0,
+        //     Ties: 0
+        // };
+
+        const score = JSON.parse(localStorage.getItem('score')) || {Looses: 0, Wins:0, Ties:0};
+
+        //We show the score right after we refrest or star the page, if we do not write this line of code the result will no show if we refresh the page
+        updateScoreElement();
+
+        function playGame(myMove){
+            const computerMove = generateComputerMove();
+            
+            if (myMove === 'Rock') {
+                if (computerMove === 'Rock'){
+                    result = 'Tie';
+                } else if (computerMove === 'Paper'){
+                    result = 'You loose';
+                } else {
+                    result = 'You win';
+                }
+            } else if (myMove === 'Paper') {
+                if (computerMove === 'Rock'){
+                    result = 'You win';
+                } else if (computerMove === 'Paper'){
+                    result = 'Tie';
+                } else {
+                    result = 'You loose';
+                }
+            } else {
+                if (computerMove === 'Rock'){
+                    result = 'You loose';
+                } else if (computerMove === 'Paper'){
+                    result = 'You win';
+                } else {
+                    result = 'Tie';
+                }
+            }
+
+            if (result === 'Tie'){
+                score.Ties++;
+            } else if (result === 'You win'){
+                score.Wins++;
+            } else {
+                score.Looses++;
+            }
+
+            localStorage.setItem('score', JSON.stringify(score)); // we save the object score into local Storage and we name it score
+
+            document.querySelector('.js-result').innerHTML = result;
+            document.querySelector('.js-moves').innerHTML = `You choose ${myMove} - Computer choose ${computerMove}`;
+
+            //With this code we ensure the score is show every time we play the game, if we don´t do that the result will only show at the beggining
+            updateScoreElement();
+        }
+     
+        function updateScoreElement (){
+            document.querySelector('.js-score').innerHTML = `
+            Wins: ${score.Wins}, Looses: ${score.Looses}, Ties: ${score.Ties}`;
+            
+        }
+    </script>
+</body>
+</html>

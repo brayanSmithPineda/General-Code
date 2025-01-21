@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+</head>
+<body>
+    <p>
+        YouTube Subscribe Button
+    </p>
+    <button class="js-subscribe-button" onclick="
+        subscribeButton();
+    ">
+        Subscribe
+    </button>
+
+    <p>
+        Amazon Shipping Calculator
+
+        Orders under $40 = +$10 shipping.
+
+        Orders over $40 = FREE shipping. 
+    </p>
+
+    <input class="js-input" type="number" placeholder="Cost of order" 
+     onkeydown = " 
+        handleKeyDown(event);
+    ">
+    <button onclick="
+        shippingCost();
+    ">Calculate</button>
+    <p class="js-result"></p>
+
+    <script>
+        function handleKeyDown(event){
+            if (event.key === 'Enter'){
+            shippingCost();
+            }
+        }
+
+        function subscribeButton(){
+        const buttonElement = document.querySelector('.js-subscribe-button') 
+        if ( buttonElement.innerHTML === 'Subscribed'){
+            buttonElement.innerHTML = 'Subscribe';    
+            } else{
+            buttonElement.innerHTML = 'Subscribed';
+            }
+        }  
+
+        
+        function shippingCost(){
+            const inputElement = document.querySelector('.js-input');
+            const resultElement = document.querySelector('.js-result');
+
+            if (inputElement.value < 40){
+                //the result from the inputElement.value is a string that's why we have to use the Number builtin method to conver it to number
+                resultElement.innerHTML = `$${Number(inputElement.value)  + 10}`;
+            } else {
+                resultElement.innerHTML = `$${Number(inputElement.value)}` ;
+            }
+        }
+    </script>
+</body>
+</html>

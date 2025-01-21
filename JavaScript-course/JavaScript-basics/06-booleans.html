@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+</head>
+<body>
+    <script>
+        const age = 14
+
+        if (age <=15){
+            console.log('You can not drive');
+        } else if (age === 16) {
+            console.log('You almost there');
+        } else {
+            console.log('You can drive');
+        }
+
+        //Logical operator
+        //AND operator, logical operator has a low priority that comparison operators, so first we compare the numbers and then we use the logical operator
+        console.log(2 < 4 && 3 < 6);
+        // OR operator
+        console.log(5<5 || 8 < 4);
+        //NOT operator
+        console.log(!true);
+
+        //Thuthy and Falsy values: these are values tha behaves are true or false, falsy values are None, Null, 0, False , '', NaN, the rest are truthy values.
+
+        const cartQuantity = 5;
+
+        if (cartQuantity) {
+            console.log('cart has products');
+        } else {
+            console.log('cart has no products');
+        }
+
+        if(!cartQuantity) {
+            console.log('cart has no products');
+        } else {
+            console.log('cart has products')
+        }
+
+        // Ternary Operator(short for a if else statement)
+        const result = 5>4 ? '5 is greater than 4' : '5 is not greater than 4';
+        console.log(result);
+
+        //Guard operator ( if the left value is truthy it  return the right side, if it is falsy then in return the left side)
+
+        const result2 = None && console.log('the left side is a truthy operator');
+        console.log(result2);
+
+        //Default operator (in this case if the first value is truthy it'll return the left side)
+
+        const currency = 'EUR';
+        const result3 = currency || 'USD';
+        console.log(result3);
+    </script>
+</body>
+</html>

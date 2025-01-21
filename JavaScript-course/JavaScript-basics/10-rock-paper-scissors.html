@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper and scissors</title>
+    <link rel="stylesheet" href="/JavaScript-course/css/10-rock-paper-scissors.css">
+</head> 
+<body>
+    <p class="title">rock paper and scissors</p>
+    
+    <button onclick="
+        playGame('rock');
+    " class="move-button">
+        <img class="emoji" src="/Influcer-Marketing-App/Images/rock-emoji.png" alt="rock-emoji">
+    </button>
+    
+    <button onclick="
+        playGame('paper');
+    " class="move-button">
+        <img class="emoji" src="/Influcer-Marketing-App/Images/paper-emoji.png" alt="paper-emoji">
+    </button>
+    
+    <button onclick="
+        playGame('scissors');
+    " class="move-button">
+        <img class="emoji" src="/Influcer-Marketing-App/Images/scissors-emoji.png" alt="scissors-emoji">
+    </button>
+
+    <p class="js-result cs-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button onclick="
+        score.Wins = 0;
+        score.Looses = 0;
+        score.Ties = 0;
+        localStorage.removeItem('score');
+
+        //We write the updateScoreElement function to reset the score immediatily we click the button, if we do not write this line the webpage will displate the old score until we play again
+        updateScoreElement();
+    " class="reset-score-button">
+        Reset Scores
+    </button>
+
+    
+    <script src="/JavaScript-course/scripts/10-rock-paper-scissors.js"></script>
+</body>
+</html>

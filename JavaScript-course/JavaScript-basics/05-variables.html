@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        let variable1 = 5;
+        console.log(variable1);
+
+        let calculation = variable1 + 5;
+        console.log(calculation);
+
+        // Re-assigning the value of variable1
+        variable1 = 3;
+        console.log(variable1);
+
+        // If we now for sure the variable is not going to change we should use const
+        const variable2 = 'This variable is not going to be re-assined';
+
+        //we use const by default, if we know the varible is going to change then we use var 
+
+        console.log(typeof variable2);
+    </script>
+</body>
+</html>

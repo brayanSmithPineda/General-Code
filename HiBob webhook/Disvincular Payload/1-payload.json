@@ -1,0 +1,25 @@
+{
+  "companyId": 554280,
+  "employeeId": "3496900884367933526",
+  "effectiveDate": "2025-01-03",
+  "changedBy": {
+    "id": "2943317144655364390",
+    "companyId": 554280,
+    "firstName": "Brayan",
+    "surname": "Pineda",
+    "email": "bpineda@comparaonline.com",
+    "displayName": "Brayan Pineda",
+    "site": "Colombia",
+    "siteId": 2153660,
+    "impersonatorInfo": null
+  },
+  "type": "table.entry.created",
+  "data": {
+    "status": "terminated",
+    "employeeStatus": "Inactive",
+    "reasonType": "Involuntary",
+    "leaveReason": "Terminated - Underperformance",
+    "customColumns": {}
+  },
+  "creationDate": "2025-01-02T16:00:30.144902"
+}
